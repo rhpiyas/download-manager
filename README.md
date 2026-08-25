@@ -69,7 +69,7 @@ This project was developed as part of the **Lab Final** for the Desktop and Web 
 
 ## Author
 
-**Piyas**  
+**Rakib Hasan Piyas**  
 Department of Software Engineering  
 Daffodil International University
 

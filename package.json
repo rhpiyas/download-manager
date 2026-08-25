@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "startApp": "index.js",
-  "main" : "index.js",
+  "main": "index.js",
   "dependencies": {
     "archiver": "^8.0.0",
     "debug": "^4.4.3",
-    "electron": "^43.4.0",
+    "electron": "^43.4.1",
     "env-paths": "^3.0.0",
     "graceful-fs": "^4.2.11",
     "ms": "^2.1.3",

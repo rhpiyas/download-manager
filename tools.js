@@ -1,5 +1,4 @@
 const Download = require("./lib/download");
-const Compression = require("./lib/compression");
 
 
 function createAndStartDownload(url, directory) {
@@ -13,4 +12,4 @@ function createAndStartCompression(source) {
 
 module.exports = {
     createAndStartDownload
-} // my task is Download manager
+}

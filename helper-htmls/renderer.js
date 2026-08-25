@@ -19,7 +19,7 @@ async function main(){
 
     const prog = document.getElementById("progress")
 
-    setInterval(async function (){  //স্যার, এইখানে async ব্যবহার করছিলাম না
+    setInterval(async function (){
         const val = await invoke("progress")
         loadProgress(val)
     }, 1000);

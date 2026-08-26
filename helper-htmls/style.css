@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	color: #1f2937;
+	background: #f3f6fa;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 24px 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: linear-gradient(135deg, #f8fbff 0%, #e8eef6 100%);
+}
+
+h1 {
+	margin: 0 0 18px;
+	color: #172033;
+	text-align: center;
+}
+
+#clock {
+	margin-bottom: 10px;
+	color: #64748b;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+h1:not(#clock) {
+	font-size: 2rem;
+}
+
+.download-form,
+.progress-container {
+	width: min(100%, 620px);
+	padding: 18px;
+	border: 1px solid #dbe3ed;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+.download-form {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto;
+	gap: 12px;
+}
+
+#download-link {
+	min-width: 0;
+	padding: 12px 14px;
+	border: 1px solid #cbd5e1;
+	border-radius: 6px;
+	color: #1f2937;
+	background: #fff;
+	font: inherit;
+	font-size: 0.95rem;
+	outline: none;
+}
+
+#download-link:focus {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+#choose-location {
+	padding: 12px 18px;
+	border: 0;
+	border-radius: 6px;
+	color: #fff;
+	background: #2563eb;
+	font: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+	appearance: none;
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+#choose-location:hover {
+	background: #1d4ed8;
+	transform: translateY(-1px);
+}
+
+#choose-location:active {
+	transform: translateY(0);
+}
+
+#output {
+	grid-column: 1 / -1;
+	overflow-wrap: anywhere;
+	color: #64748b;
+	font-size: 0.9rem;
+}
+
+.progress-container {
+	margin-top: 18px;
+}
+
+#progress {
+	display: block;
+	width: 100%;
+	height: 12px;
+	accent-color: #2563eb;
+}
+
+#progress-text {
+	margin-top: 10px;
+	color: #475569;
+	font-size: 0.9rem;
+	text-align: right;
+}
+
+@media (max-width: 520px) {
+	body {
+		padding: 28px 14px;
+	}
+
+	.download-form,
+	.progress-container {
+		padding: 16px;
+	}
+
+	.download-form {
+		grid-template-columns: 1fr;
+	}
+
+	#choose-location {
+		width: 100%;
+	}
+}
